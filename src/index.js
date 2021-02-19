@@ -7,10 +7,15 @@ import {
   BrowserRouter
 } from "react-router-dom";
 
+import ScopedCssBaseline from '@material-ui/core/ScopedCssBaseline';
+
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <ScopedCssBaseline>
+        <App />
+      </ScopedCssBaseline>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
